@@ -46,7 +46,7 @@ function App() {
       joinGroup(selectedProject);
     return () => {
       if (selectedProject)
-      leaveGroup(selectedProject);
+        leaveGroup(selectedProject);
     }
   }, [selectedProject]);
 
