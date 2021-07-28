@@ -149,14 +149,15 @@ function App() {
         <p>{selectedProject}</p>
         <form>
           Add a new task
-          <TextField hintText="Task name" onChange={changeNewTask} />
+          <TextField style={{padding: "10px"}} hintText="Task name" onChange={changeNewTask} />
           <Button disabled={!newTask} onClick={addTask}>Add</Button>
         </form>
+      <Divider />
         Tasks for selected project
         <List>
           {tasks.map(t => (
             <ListItem >
-              <ListItemText primary={t} />
+              <ListItemText style={{textAlign: "center"}} primary={t} />
             </ListItem>
           ))}
         </List>
